@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condicoes Aninhadas</title>
+</head>
+<body>
+    <h1>Conferindo eligibilidade para Elections</h1>
+    <input type="number" name="num" id="num">
+    <input type="button" value="Check" onclick="conferir()">
+    <div id="div">
+    <p>Verificando eligibilidade</p>
+    </div>
+</body>
+<script>
+    function conferir() {
+        var num = window.document.getElementById('num')
+        var age = Number(num.value)
+        var resposta = window.document.getElementById('div')
+        if (age < 16){
+            resposta.innerHTML = `<p>Voce nao pode votar!</p>`
+        } else if (age < 18 || age > 65){
+            resposta.innerHTML = `<p>Voce  pode votar se quiser!</p>`
+        } else {
+            resposta.innerHTML = `<p>Voce é obrigado a votar!</p>`
+        } 
+    }
+    
+
+</script>
+</html>

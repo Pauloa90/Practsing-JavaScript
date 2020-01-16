@@ -16,9 +16,10 @@
 </body>
 <script>
     function verificar() {
-        var nome = window.document.getElementById('text')
-        var comprimento = (nome.lenght)
-        console.log(comprimento)
+        var comprimento = window.document.getElementById('text').value;
+        var n = comprimento.length;
+        
+        texto.innerHTML = `O comprimento do seu nome é ${n}` 
     }
 </script>
 </html>
