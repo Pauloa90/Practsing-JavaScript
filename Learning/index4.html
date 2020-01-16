@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Your age</h1>
+    Type your age: 
+    <input type="number" name="number1" id="number1">
+    <input type="button" value="Check" onclick="checking()">
+    <div id="resposta"></div>
+
+</body>
+<script>
+    function checking(){
+        var age = window.document.getElementById('number1')
+        var res = window.document.getElementById('resposta')
+        var testing = Number(age.value)
+        res.innerHTML = `<p>Your age is ${testing}</p>`
+        if (age>18){
+            res.innerHTML = `<p>Sua idade é ${testing} anos!</p>`
+        }
+    }
+
+</script>
+</html>

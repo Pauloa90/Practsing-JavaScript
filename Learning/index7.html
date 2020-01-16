@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Voce é um programador eficiente?</h1>
+    Digite quantas teclas por segundo voce consegue digitar por minuto: 
+    <input type="number" name="n1" id="n1">
+    <input type="button" value="Eficiente?" onclick="verificar()">
+    <div id="paragraph"></div>
+</body>
+<script>
+    function verificar() {
+        var n1 = window.document.getElementById('n1')
+        var teclasporminuto = Number(n1.value)
+        var paragraph = window.document.getElementById('paragraph')
+        if (teclasporminuto >= 700) {
+            paragraph.innerHTML = `<p>Congratulations, you are a very efficient programmer!</p>`
+        }
+        else {
+            paragraph.innerHTML = `<p>You have to be faster if you want to get a job!</p>`
+        }
+    }
+</script>
+</html>

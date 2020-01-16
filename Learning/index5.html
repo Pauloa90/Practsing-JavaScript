@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aposentadoria</h1>
+    DIgite quandos anos prestados de servico voce ja fez:
+    <input type="number" name="anos" id="anos">
+    <input type="button" value="Possivel?" name="button" onclick="verify()">
+    <div id="p"></div>
+
+
+
+</body>
+<script>
+    function verify(){
+        var anos = window.document.getElementById('anos')
+        var tempo = Number(anos.value)
+        var res = window.document.getElementById('p')
+        res.innerHTML = `Voce contribuiu ${tempo}anos!`
+        if (tempo > 35) {
+            res.innerHTML = `Voce, ja pode descansar! Voce tem direito a aposentadoria!`
+        } else {
+            res.innerHTML = `Voce ainda precisa trabalhar ${35-tempo} ano(s) para pode garantir sua aposentadoria!`
+
+        }
+
+    }
+
+
+</script>
+
+</html>
