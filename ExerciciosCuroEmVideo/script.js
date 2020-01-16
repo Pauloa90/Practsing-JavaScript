@@ -2,8 +2,8 @@ function loading(){
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
     var data = new Date();
-    hora = data.getHours();
-   
+    // hora = data.getHours();
+   hora = 6
     msg.innerHTML = `Agora sao ${hora} horas` 
     if (hora >= 0 && hora < 12) {
         img.src="morning.png"
@@ -12,7 +12,7 @@ function loading(){
         img.src="afternoon.png"
         document.body.style.background =  '#BD8A6F'
     } else {
-        img.src="rsz_evening.png"
+        img.src="evening.png"
         document.body.style.background = '#5F524A'
     }
 }
