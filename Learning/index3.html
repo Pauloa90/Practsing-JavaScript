@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Identificador de Estrangeiros</h1>
+    Type where you are from: 
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="CheckIt" onclick="verificar()">
+    <div id="res"></div>
+</body>
+<script>
+    function verificar(){
+        var pais = (txt.value)
+        var res = window.document.querySelector('div#res')
+        
+        if (pais == 'Ireland' || 'ireland'){
+        res.innerHTML += `<p>You are a Foreigner</p>`
+      } else {
+            res.innerHTML += `<p>You are Native!</p>`
+        }
+    }
+    
+</script>
+</html>
