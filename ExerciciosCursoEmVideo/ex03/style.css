@@ -1,0 +1,39 @@
+
+body{
+    background-color: #5e93e8;
+    font: normal 15pt Arial;
+    
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+section {
+    background-color: white;
+    width: 500px;
+    
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(88, 69, 69);
+    
+    
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+img{
+    position: relative;
+   
+}
+div {
+    text-align:left;
+    padding: 8px;
+    margin: 10px;
+}
+input{
+    margin: 10px;
+}
