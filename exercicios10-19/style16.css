@@ -1,0 +1,39 @@
+
+body{
+    background-color: #5e93e8;
+    font: normal 15pt Arial;
+    
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+section {
+    background-color: white;
+    width: 500px;
+    
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(88, 69, 69);
+    
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div {
+    text-align:center;
+    padding: 8px;
+}
+
+select{
+    width: 200px;
+    height: 200px;
+    left: 0;
+    position: relative;
+    margin-left: 10px;
+}
